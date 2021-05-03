@@ -17,9 +17,9 @@ public class Principal01 {
 		listaPersonas.add(new Person("22", "Rei", "Ayanami"));
 		listaPersonas.add(new Person("33", "Asuka", "Langley"));
 		
-		EscritorLectorPeople.escribirObjetos1(listaPersonas, "l1.dat");
+		EscritorLectorPeople.escribirObjetos2(listaPersonas, "l1.dat");
 		
-		listaPersonas2 = EscritorLectorPeople.leerObjetos1("l1.dat");
+		listaPersonas2 = EscritorLectorPeople.leerObjetos2("l1.dat");
 		
 		listaPersonas2.forEach(p -> System.out.println(p.getDni() + " " + p.getNombre()));
 		

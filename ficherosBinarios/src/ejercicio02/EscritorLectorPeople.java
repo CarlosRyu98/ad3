@@ -76,9 +76,13 @@ public class EscritorLectorPeople {
 
 			ObjectInputStream entrada = new ObjectInputStream(new FileInputStream(file));
 			
-			for(true) {
+			Person persona = (Person) entrada.readObject();
+			
+			while(persona != null) {
 				
-				listaPersonas.add(entrada.readObject());
+				listaPersonas.add(persona);
+				
+				persona = (Person)entrada.readObject();
 				
 			}
 			
